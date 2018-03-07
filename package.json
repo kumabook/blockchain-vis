@@ -3,5 +3,11 @@
   "version": "0.0.1",
   "main": "index.js",
   "author": "Hiroki Kumamoto <kumabook@live.jp>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "flow-bin": "^0.66.0"
+  },
+  "scripts": {
+    "flow": "flow"
+  }
 }
