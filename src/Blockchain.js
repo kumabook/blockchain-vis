@@ -19,7 +19,7 @@ type Block = {
   previousHash: string,
 };
 
-const GENESIS_PREVIOUS_HASH = 1;
+const GENESIS_PREVIOUS_HASH = '1';
 const GENESIS_PROOF = 100;
 
 const SECRET = 'my_blockchain';
@@ -60,7 +60,7 @@ export class Blockchain {
     this.newBlock(GENESIS_PROOF, GENESIS_PREVIOUS_HASH)
   }
 
-  newBlock(proof: number, previousHash: number) {
+  newBlock(proof: number, previousHash: ?string) {
     const block = {
       index:        this.chain.length + 1,
       timestamp:    Date.now(),
